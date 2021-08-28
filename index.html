@@ -6,9 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank Account</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 
 <body>
+    <header>
+        <h1 class="text-center text-yellow-400 text-6xl font-extrabold">Welcome to Prime Bank Limited.</h1>
+    </header>
+    <main>
+        <section class="">
+            <div class="bg-green-100 w-3/4 mx-auto mt-8 p-8 ">
+                <h3 class="text-2xl mb-4">Please Login</h3>
+                <input id="user-email" class="w-3/4 border border-gray-400 rounded mb-4 px-3" type="email"
+                    placeholder="Your Email" name="" id="">
+                <br>
+                <input id="user-password" class="w-3/4 border border-gray-400 rounded mb-4 px-3" type="password"
+                    placeholder="Your Password" name="" id="">
+                <br>
+                <button id="button-submit" type="submit" class=" font-bold bg-yellow-600 px-4 py-2 rounded
+                text-white">Submit</button>
+            </div>
+        </section>
+    </main>
 
     <script src="js/bank.js"></script>
 </body>
