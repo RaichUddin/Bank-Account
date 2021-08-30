@@ -5,7 +5,7 @@ const raich = document.getElementById('button-submit').
         const userText = userEmail.value;
         const userPassword = document.getElementById('user-password').value;
         if (userText == 'rabbitrade10@gmail.com' && userPassword
-            == 'fakir') {
-            window.location.href = 'account.html';
+            == 'raich') {
+            window.location.href = 'banking.html';
         }
-    })
+    });

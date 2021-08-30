@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account holder</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-purple-50">
+    <header>
+        <h1 class="text-center text-blue-400 text-5xl
+         font-bold"> Prime Bank Limited Account Holder Server.</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <!-- balance and transaction -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4  text-white">
+                <div class="bg-blue-400 p-12 rounded">
+                    <h3 class="text-3xl mb-3">Deposit</h3>
+                    <h4 class="text-4xl">$<span id="deposit-total">00</span></h4>
+                </div>
+                <div class="bg-pink-500 p-12 rounded">
+                    <h3 class="text-3xl mb-3">Withdraw</h3>
+                    <h4 class="text-4xl">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-purple-700 p-12 rounded">
+                    <h3 class="text-3xl mb-4">Balance</h3>
+                    <h4 class="text-4xl">$ <span id="balance-total">1299</span></h4>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdraw -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-20">
+                <div class="bg-red-200 p-8 rounded">
+                    <h3 class="text-2xl mb-4 ">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-amount" class="w-3/4 border border-gray-400 rounded mb-4 px-3" type="email"
+                            placeholder="$ deposit-amount" name="">
+                        <br>
+                        <button id="button-submit" type="submit" class=" font-bold bg-blue-600 px-4 py-2 rounded
+                text-white">Submit</button>
+                    </div>
+                </div>
+                <div class="bg-blue-200 p-8 rounded">
+                    <h3 class="text-2xl mb-4">Please Withdraw</h3>
+                    <div>
+                        <input id="withdraw-amount" class="w-3/4 border border-gray-400 rounded mb-4 px-3" type="email"
+                            placeholder="$ Withdraw-amount" name="" id="">
+                        <br>
+                        <button id="button-submited" type="submit" class=" font-bold bg-pink-600 px-4 py-2 rounded
+                text-white">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
